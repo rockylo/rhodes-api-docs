@@ -1,14 +1,15 @@
 # Rho::NFCTagTechnology Class API
 
-Use the NFCTagTechnology to connect to NFC tags and to determine their type.
+Use the NFCTagTechnology to connect to NFC tags and to determine their type. 
 
 ## Enabling NFC
 
-To use the NFC methods, you need to enable NFC on the Android device. Do this by adding that capability to the build.yml file:
+To use the NFC methods, you need to enable NFC on the Android device and ensure that the version is 2.3.3 or later. Do this by adding that capability to the build.yml file:
 
 	:::yaml
 	android: 
-	  extensions: 
+	  version 2.3.3
+	  extensions:
 	  - nfc
 
 ## Properties

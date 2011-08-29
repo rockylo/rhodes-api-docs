@@ -1,14 +1,15 @@
 # Rho::NdefRecord API
 
-Get data from near field communications Ndef tag records.
+Get data from near field communications Ndef tag records. For code examples, see [Rhodes Webinar Sample: NFC](https://github.com/rhomobile/webinar-samples/blob/master/nfc-rhodes/app/Nfc/nfc_controller.rb) and [Rhodes System API Samples: NFC](https://github.com/rhomobile/rhodes-system-api-samples/blob/master/app/Nfc/controller.rb).
 
 ## Enabling NFC
 
-To use the NFC methods, you need to enable NFC on the Android device. Do this by adding that capability to the build.yml file:
+To use the NFC methods, you need to enable NFC on the Android device and ensure that the version is 2.3.3 or later. Do this by adding that capability to the build.yml file:
 
 	:::yaml
 	android: 
-	  extensions: 
+	  version 2.3.3
+	  extensions:
 	  - nfc
 
 ## NFC Record Hash
@@ -63,7 +64,7 @@ You can extract data from an Ndef record with the following methods:
 
 ## make_hash
 
-Returns a hash from an Ndef record, from which you can then extract data with the NdefRecord get methods. 
+Returns a hash from an Ndef record, from which you can then extract data with the NdefRecord get methods. [Click here for an example in the Rhodes developer guide under NFC.](http://docs.rhomobile.com/rhodes/nfc#reading-an-nfc-tag)
 
 	:::ruby
 	Rho::NdefRecord.make_hash
@@ -107,7 +108,7 @@ Returns a string that is a text description of the Type Name Format.
 </tr>
 </table>
 
-## NdefRecord.convert_RTD_to_string
+## convert_RTD_to_string
 
 Returns a string that is a text description of the rtd (type part of the NdefRecord hash).
 

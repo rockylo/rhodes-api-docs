@@ -1,6 +1,8 @@
 ## System Methods - Access System Information
 
-Provides access to system information.
+Provides access to system information. 
+
+For code examples, see [Rhodes System API Samples view file](https://github.com/rhomobile/rhodes-system-api-samples/blob/master/app/layout.erb) and [Rhodes System API Samples System Test](https://github.com/rhomobile/rhodes-system-api-samples/blob/master/app/SystemTest/controller.rb).
 
 ## get_property
 

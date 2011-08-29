@@ -9,15 +9,6 @@ Creates a navigation bar for the iPhone.
 	:::ruby
 	NavBar.create(navbar-elements)
 
-<table border="1">
-<tr>
-	<td><code>tab-elements</code></td>
-	<td>Name/value array for the tabbar, such as <code>{:label => 'Main page',  :action => '/app', :icon => '/public/images/bar/colored_btn.png', :reload => true}</code></td>
-</tr>
-</table>
-
-### navbar-elements
-
 The navbar-elements parameter is a list of name/value pairs from the following list of navbar elements.
 
 <table border="1">
