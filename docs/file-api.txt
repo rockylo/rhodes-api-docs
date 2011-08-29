@@ -90,4 +90,4 @@ Close a file.
 	               # have this folder, library files are stored in jar
 	  RhoLog.txt   #application log
 
-[Click here to see the RhoApplication methods.](rhoapplication)
+[Click here to see the RhoApplication methods.](rhoapplication-api)
