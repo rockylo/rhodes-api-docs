@@ -28,19 +28,9 @@ The argument list can consist of the following arguments.
 	<td><code>id</code></td>
 	<td>return a hash of the properties of the contact identified by this id.</td>	
 </tr>
-<tr>
-	<td><code>:count</code></td>
-	<td>(optional) query overall contact count.</td>	
-</tr>
-<tr>
-	<td><code>{:offset => offset, :max_results => limit}</code></td>
-	<td>(optional) query just a particular set of contacts (for pagination purpose).</td>
-</tr>
 </table>
 
 ## create!
-
-Returns a hash of the contact properties. 
 
 Create a new contact in the phonebook, setting its properties passed as a parameter hash.
 

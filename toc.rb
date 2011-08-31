@@ -1,7 +1,7 @@
 section 'getting-started', "Rhodes API Reference" do
   topic 'home',                 'Home'
   topic 'alert-api',             'Alert'
-  topic 'appaplication-api',             'AppApplication'
+  topic 'appapplication-api',             'AppApplication'
   topic 'asynchttp-api',             'AsyncHttp'
   topic 'barcode-api',             'Barcode'
   topic 'bluetoothmanager-api',             'BluetoothManager'
@@ -30,7 +30,7 @@ section 'getting-started', "Rhodes API Reference" do
   topic 'NFCTagTechnology_NfcF-api',      'NFCTagTechnology_NfcF'
   topic 'NFCTagTechnology_NfcV-api',      'NFCTagTechnology_NfcV'
   topic 'NFCTagTechnology-api',      'NFCTagTechnology'
-  topic 'rhoaplication-api',             'RhoApplication'
+  topic 'rhoapplication-api',             'RhoApplication'
   topic 'rhoconfig-api',             'RhoConfig'
   topic 'rhocontact-api',             'RhoContact'
   topic 'rhoerror-api',             'RhoError'
