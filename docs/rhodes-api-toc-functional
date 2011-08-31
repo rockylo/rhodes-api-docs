@@ -1,10 +1,10 @@
-# Rhodes API Functional Listing
+# Rhodes API Listing by Function
 
 The Rhodes APIs are listed to the left in alphabetical order. On this page is a listing of the Rhodes APIs by function.
 
 ## Device Capabilities
 
-[Alert API: Call system alert methods for popup, vibrate, or playing audio files.](alert-api)
+[Alert API: Call system alert methods for popup, vibrate, or playing audio files.](alert-api).
 
 [Barcode API: Allows the device to recognize a barcode](barcode-api).
 
@@ -110,7 +110,7 @@ The Rhodes APIs are listed to the left in alphabetical order. On this page is a 
 
 ## Configuration APIs
 
-[RhoConfig API: Allows access to the configuration properties](rhoconfig-api)
+[RhoConfig API: Allows access to the configuration properties](rhoconfig-api).
 
 
 
