@@ -1,5 +1,6 @@
 section 'getting-started', "Rhodes API Reference" do
   topic 'home',                 'Home'
+  topic 'rhodes-api-toc-functional',             'API List by Function'
   topic 'alert-api',             'Alert'
   topic 'appapplication-api',             'AppApplication'
   topic 'asynchttp-api',             'AsyncHttp'

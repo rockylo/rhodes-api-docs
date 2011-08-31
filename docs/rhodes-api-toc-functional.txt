@@ -1,6 +1,6 @@
 # Rhodes API Listing by Function
 
-The Rhodes APIs are listed to the left in alphabetical order. On this page is a listing of the Rhodes APIs by function.
+This page lists the Rhodes APIs by function.
 
 ## Device Capabilities
 
@@ -10,7 +10,7 @@ The Rhodes APIs are listed to the left in alphabetical order. On this page is a 
 
 [BluetoothManager API: Makes a connection between your Bluetooth-equipped device and another Bluetooth-equipped device](bluetoothmanager-api).
 
-[BluetoothSession API: Manages a connection session between your Bluetooth-equipped device and another Bluetooth-equipped device.](bluetoothsession).
+[BluetoothSession API: Manages a connection session between your Bluetooth-equipped device and another Bluetooth-equipped device.](bluetoothsession-api).
 
 [Camera API: Use the camera on a device](camera-api).
 
