@@ -1,6 +1,6 @@
-# RhoError Class - Access Error Messages
+# Rho::RhoError Class
 
-Access error messages.
+Access error messages. Refer to the [Setting app in the Rhodes System API Samples for code examples](https://github.com/rhomobile/rhodes-system-api-samples/blob/master/app/Settings/controller.rb).
 
 ## message
 

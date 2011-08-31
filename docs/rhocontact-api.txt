@@ -1,7 +1,5 @@
 # Rho::RhoContact API
 
-Access a Device Contacts
-
 Provides access to a device's phone book and contacts. For a code example, see the view and controller in the [/app/Contacts folder in the System API Samples](https://github.com/rhomobile/rhodes-system-api-samples/blob/master/app/Contacts/controller.rb) application.
 
 ## Enabling the Contacts

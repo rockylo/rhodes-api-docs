@@ -13,7 +13,7 @@ Cancel the current AsyncHttp call.
 
 Download a file to the specified filename.
 
-[Click for an example of download_file.](http://edgedocs.rhomobile.com/rhodes/connect-to-web-services#asynchttp-download_file-ex)
+[Click for an example of download_file.](http://docs.rhomobile.com/rhodes/connect-to-web-services#asynchttp-download_file-ex)
 
 	:::ruby
 	Rho::AsyncHttp.download_file(:url, :headers, :filename, :callback, :callback_param)
@@ -37,7 +37,7 @@ Download a file to the specified filename.
 </tr>
 <tr>
 	<td><code>:callback_param</code></td>
-	<td>(optional) Parameters to send to the callback. Parameters values should be url encoded with [RhoSupport.url_encode](http://edgedocs.rhomobile.com/rhodes/application#rhosupport-class).</td>
+	<td>(optional) Parameters to send to the callback. Parameters values should be url encoded with [RhoSupport.url_encode](http://docs.rhomobile.com/rhodes/application#rhosupport-class).</td>
 </tr>
 </table>
 
@@ -45,7 +45,7 @@ Download a file to the specified filename.
 
 Perform an HTTP GET request to the specified URL.
 
-[Click for an example of get.](http://edgedocs.rhomobile.com/rhodes/connect-to-web-services#asynchttp-get-ex)
+[Click for an example of get.](http://docs.rhomobile.com/rhodes/connect-to-web-services#asynchttp-get-ex)
 
 	:::ruby
 	Rho::AsyncHttp.get(:url, :headers, :callback, :callback_param)
@@ -65,7 +65,7 @@ Perform an HTTP GET request to the specified URL.
 </tr>
 <tr>
 	<td><code>:callback_param</code></td>
-	<td>(optional) Parameters to send to the callback. Parameters values should be url encoded with [RhoSupport.url_encode](http://edgedocs.rhomobile.com/rhodes/application#rhosupport-class).</td>
+	<td>(optional) Parameters to send to the callback. Parameters values should be url encoded with [RhoSupport.url_encode](http://docs.rhomobile.com/rhodes/application#rhosupport-class).</td>
 </tr>
 <tr>
 	<td><code>:authentication</code></td>
@@ -98,7 +98,7 @@ The authentication parameter is a hash with parameters such as the following.
 
 Perform HTTP POST request to the specified URL.
 
-[Click for an example of post.](http://edgedocs.rhomobile.com/rhodes/connect-to-web-services#asynchttp-post-ex)
+[Click for an example of post.](http://docs.rhomobile.com/rhodes/connect-to-web-services#asynchttp-post-ex)
 
 	:::ruby
 	Rho::AsyncHttp.post(:url, :headers, :body, :callback, :callback_param)
@@ -122,7 +122,7 @@ Perform HTTP POST request to the specified URL.
 </tr>
 <tr>
 	<td><code>:callback_param</code></td>
-	<td>(optional) Parameters to send to the callback. Parameters values should be url encoded with [RhoSupport.url_encode](http://edgedocs.rhomobile.com/rhodes/application#rhosupport-class).</td>
+	<td>(optional) Parameters to send to the callback. Parameters values should be url encoded with [RhoSupport.url_encode](http://docs.rhomobile.com/rhodes/application#rhosupport-class).</td>
 </tr>
 <tr>
 	<td><code>:authentication</code></td>
@@ -155,7 +155,7 @@ The authentication parameter is a hash with parameters such as the following.
 
 Upload the specified file using HTTP POST.
 
-[Click for examples of upload_file.](http://edgedocs.rhomobile.com/rhodes/connect-to-web-services#asynchttp-upload_file-ex)
+[Click for examples of upload_file.](http://docs.rhomobile.com/rhodes/connect-to-web-services#asynchttp-upload_file-ex)
 
 	:::ruby
 	Rho::AsyncHttp.upload_file(:url, :headers, :filename, :body, :callback, :callback_param)
@@ -183,7 +183,7 @@ Upload the specified file using HTTP POST.
 </tr>
 <tr>
 	<td><code>:callback_param</code></td>
-	<td>(optional) Parameters to send to the callback. Parameters values should be url encoded with [RhoSupport.url_encode](http://edgedocs.rhomobile.com/rhodes/application#rhosupport-class).</td>
+	<td>(optional) Parameters to send to the callback. Parameters values should be url encoded with [RhoSupport.url_encode](http://docs.rhomobile.com/rhodes/application#rhosupport-class).</td>
 </tr>
 </table>
 

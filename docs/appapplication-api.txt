@@ -1,12 +1,10 @@
 # AppApplication API
 
-- Coordinate Application Startup
-
 Coordinate the startup of a Rhodes application. These methods are in the application.rb file.
 
 ## initialize
 
-The initialize method is generated in the application.rb file. Put your initialization code here.
+The initialize method is generated in the application.rb file. Put your application initialization code here.
 
 	:::ruby
 	class AppApplication < Rho::RhoApplication
@@ -15,12 +13,15 @@ The initialize method is generated in the application.rb file. Put your initiali
 	  end
 	end
 
-
-
-
 ## AppApplication Class Methods
 
-You can define the following AppApplication class methods in your application.rb file to listen for activation, deactivation, and upgrade events.
+You can define the following AppApplication class methods in your application.rb file to listen for activation, deactivation, and upgrade events:
+
+ * on_ui_created
+ * on_ui_destroyed
+ * on_activate_app
+ * on_deactivate_app
+ * on_reinstall_config_update
 
 ## on_ui_created
 

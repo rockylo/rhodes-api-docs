@@ -1,6 +1,6 @@
 # Rho::RhoUtils API
 
-Seed the Rhom database. For an example, see [Seeding the Database in Using the Local Database with Rhom](http://edgedocs.rhomobile.com/rhodes/rhom#seeding-the-database).
+Seed the Rhom database. For an example, see [Seeding the Database in Using the Local Database with Rhom](http://docs.rhomobile.com/rhodes/rhom#seeding-the-database).
 
 ## load_offline_data
 
