@@ -42,6 +42,7 @@ section 'getting-started', "Rhodes API Reference" do
   topic 'ringtonemanager-api',             'RingtoneManager'
   topic 'signaturetool-api',             'SignatureTool'
   topic 'syncengine-api',             'SyncEngine'
+  topic 'system-api',             'System'
   topic 'timer-api',             'Timer'
   topic 'webview-api',             'WebView'
 end
