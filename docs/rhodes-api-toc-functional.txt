@@ -4,13 +4,13 @@ This page lists the Rhodes APIs by function.
 
 ## Device Capabilities
 
-[Alert API: Call system alert methods for popup, vibrate, or playing audio files.](alert-api).
+[Alert API: Call system alert methods for popup, vibrate, or playing audio files](alert-api).
 
 [Barcode API: Allows the device to recognize a barcode](barcode-api).
 
 [BluetoothManager API: Makes a connection between your Bluetooth-equipped device and another Bluetooth-equipped device](bluetoothmanager-api).
 
-[BluetoothSession API: Manages a connection session between your Bluetooth-equipped device and another Bluetooth-equipped device.](bluetoothsession-api).
+[BluetoothSession API: Manages a connection session between your Bluetooth-equipped device and another Bluetooth-equipped device](bluetoothsession-api).
 
 [Camera API: Use the camera on a device](camera-api).
 
@@ -88,7 +88,7 @@ This page lists the Rhodes APIs by function.
 
 [Rhom API: Allows access to the Rhodes mini database object mapper, performing database operation on Rhodes model objects](rhom-api).
 
-[RhoUtils API: Seed the Rhom database](rhputils-api).
+[RhoUtils API: Seed the Rhom database](rhoutils-api).
 
 ## Error and Logging APIs
 
