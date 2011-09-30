@@ -1,11 +1,11 @@
-Rhomobile Documentation Project
+Rhodes API Documentation Project
 ==================
 
-This is a simple CMS and documentation for the Rhomobile platform: [http://docs.rhomobile.com](http://docs.rhomobile.com)
+This is a simple CMS and documentation for the Rhomobile platform: [http://rhodesapi.rhomobile.com](http://rhodesapi.rhomobile.com)
 
-Edge changes to this repository are tracked realtime on [http://edgedocs.rhomobile.com](http://edgedocs.rhomobile.com)
+Edge changes to this repository are tracked realtime on [http://rhodesapi-edge.rhomobile.com](http://rhodesapi-edge.rhomobile.com)
 
-If you'd like to propose an edit to the Rhomobile docs, fork this repo, then send us a pull request.
+If you'd like to propose an edit to the Rhodes API docs, fork this repo, then send us a pull request.
 
 This tool is based off the excellent [heroku-docs project!](https://github.com/heroku/heroku-docs)
 
@@ -18,7 +18,7 @@ Setup
 * Run the following commands:
 
 		# install prereqs and shotgun the docs server
-		$ cd rhomobile-docs
+		$ cd rhodes-api-docs
 		$ sudo gem install bundler (if you don't have it already)
 		$ bundle install
 		$ rake start #=> this will start the server and load the docs home page in your browser
@@ -35,8 +35,6 @@ This will copy all content from the sub-directories into docs/.  Then push to he
 	$ git push heroku master
 
 The app loads content from the docs subdirectory.  Pages are served with a 1 hour cache setting.
-
-**NOTE: Do NOT checkin changes to docs/(subdirectory) (i.e. docs/rhodes/).  The content in docs/(subdirectory) are managed by the separate repositories.  For example, content in docs/rhodes/ is maintained in the rhodes repo [https://github.com/rhomobile/rhodes](https://github.com/rhomobile/rhodes).**
 
 About
 ----
