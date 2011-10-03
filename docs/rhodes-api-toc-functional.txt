@@ -100,7 +100,7 @@ This page lists the Rhodes APIs by function.
 
 [RhomSource API: Exposes sync information](rhomsource-api).
 
-[SyncEngine API: Synchronize data for the Rhodes model and handle updates between the Rhodes application and the RhoSync server](syncengine-api).
+[SyncEngine API: Synchronize data for the Rhodes model and handle updates between the Rhodes application and the RhoConnect server](syncengine-api).
 
 ## Application APIs
 

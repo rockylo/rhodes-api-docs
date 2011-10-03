@@ -265,7 +265,7 @@ Deletes all records from the property bag and model tables. For examples, see [R
 
 ## database_full_reset_and_logout
 
-Perform a full reset, then logout the RhoSync client.
+Perform a full reset, then logout the RhoConnect client.
 
 	:::ruby
 	Rhom::Rhom.database_full_reset_and_logout

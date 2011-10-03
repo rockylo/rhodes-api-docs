@@ -1,10 +1,10 @@
 # SyncEngine API
 
-Synchronize data for the Rhodes model and handle updates between the Rhodes application and the RhoSync server. [Refer to the Rhodes Developer Guide under Synchronization for more discussion.](http://docs.rhomobile.com/rhodes/synchronization)
+Synchronize data for the Rhodes model and handle updates between the Rhodes application and the RhoConnect server. [Refer to the Rhodes Developer Guide under Synchronization for more discussion.](http://docs.rhomobile.com/rhodes/synchronization)
 
 ## login
 
-Authenticates the user with the RhoSync server. [Click here for an example in the Rhodes Developer Guide under Synchronization.](http://docs.rhomobile.com/rhodes/synchronization#sync-authentication)
+Authenticates the user with the RhoConnect server. [Click here for an example in the Rhodes Developer Guide under Synchronization.](http://docs.rhomobile.com/rhodes/synchronization#sync-authentication)
 
 	:::ruby
 	SyncEngine.login(login, password, callback_url)
@@ -12,11 +12,11 @@ Authenticates the user with the RhoSync server. [Click here for an example in th
 <table border="1">
 <tr>
 	<td><code>login</code></td>
-	<td>The login name for the RhoSync server.</td>
+	<td>The login name for the RhoConnect server.</td>
 </tr>
 <tr>
 	<td><code>password</code></td>
-	<td>The password for the RhoSync server.</td>
+	<td>The password for the RhoConnect server.</td>
 </tr>
 <tr>
 	<td><code>callback_url</code></td>
@@ -26,21 +26,21 @@ Authenticates the user with the RhoSync server. [Click here for an example in th
 
 ## logout
 
-Logs out the user from the RhoSync server.
+Logs out the user from the RhoConnect server.
 
 	:::ruby
 	SyncEngine.logout
 
 ## logged_in
 
-True if the user is logged into the RhoSync server, false otherwise.
+True if the user is logged into the RhoConnect server, false otherwise.
 
 	:::ruby
 	SyncEngine.logged_in
 
 ## dosync
 
-Start a synchronization with the RhoSync server and show an optional sync status popup.
+Start a synchronization with the RhoConnect server and show an optional sync status popup.
 
 	:::ruby
 	SyncEngine.dosync(show_sync_status, query_params)
@@ -58,7 +58,7 @@ Start a synchronization with the RhoSync server and show an optional sync status
 
 ## dosync_source
 
-Start a synchronization with the RhoSync server for a given source id or source name and show an optional status popup.
+Start a synchronization with the RhoConnect server for a given source id or source name and show an optional status popup.
 
 	:::ruby
 	SyncEngine.dosync_source(source_id_or_name, show_sync_status, query_params)
@@ -108,7 +108,7 @@ Set notification callback for a model. [Click here for an example in the Rhodes 
 <table border="1">
 <tr>
 	<td><code>source_id</code></td>
-	<td>The source id for the RhoSync server. If -1, set notification for all Rhodes models, and the callback is not removed after the sync process completes.</td>
+	<td>The source id for the RhoConnect server. If -1, set notification for all Rhodes models, and the callback is not removed after the sync process completes.</td>
 </tr>
 <tr>
 	<td><code>callback_url</code></td>
@@ -148,7 +148,7 @@ When set_notification is called, it receives a variable called @params, just lik
 <table border="1">
 <tr>
 	<td><code>@params["total_count"]</code></td>
-	<td>Total number of records that exist for this RhoSync source.</td>
+	<td>Total number of records that exist for this RhoConnect source.</td>
 </tr>
 <tr>
 	<td><code>@params["processed_count"]</code></td>
@@ -174,7 +174,7 @@ When set_notification is called, it receives a variable called @params, just lik
 <table border="1">
 <tr>
 	<td><code>@params["error_code"]</code></td>
-	<td>HTTP response code of the RhoSync server error: 401, 500, 404, etc.</td>
+	<td>HTTP response code of the RhoConnect server error: 401, 500, 404, etc.</td>
 </tr>
 <tr>
 	<td><code>@params["error_message"]</code></td>
@@ -182,7 +182,7 @@ When set_notification is called, it receives a variable called @params, just lik
 </tr>
 <tr>
 	<td><code>@params["server_errors"]</code></td>
-	<td>Hash of Type objects of RhoSync adapter error (if exists): "login-error", "query-error", "create-error", "update-error", "delete-error", "logoff-error"</td>
+	<td>Hash of Type objects of RhoConnect adapter error (if exists): "login-error", "query-error", "create-error", "update-error", "delete-error", "logoff-error"</td>
 </tr>
 </table>
 
@@ -203,7 +203,7 @@ Clears the synchronization notification for a given source id.
 <table border="1">
 <tr>
 	<td><code>source_id</code></td>
-	<td>The id of the source on the RhoSync server.</td>
+	<td>The id of the source on the RhoConnect server.</td>
 </tr>
 </table>
 
@@ -217,7 +217,7 @@ Perform an action upon a synchronization create error.
 <table border="1">
 <tr>
 	<td><code>source_name</code></td>
-	<td>The name of the source on the RhoSync server.</td>
+	<td>The name of the source on the RhoConnect server.</td>
 </tr>
 <tr>
 	<td><code>objects</code></td>
@@ -239,7 +239,7 @@ Perform an action upon a sync update error.
 <table border="1">
 <tr>
 	<td><code>source_name</code></td>
-	<td>The name of the source on the RhoSync server.</td>
+	<td>The name of the source on the RhoConnect server.</td>
 </tr>
 <tr>
 	<td><code>objects</code></td>
@@ -265,7 +265,7 @@ Perform action upon a synchronization delete error.
 <table border="1">
 <tr>
 	<td><code>source_name</code></td>
-	<td>The name of the source on the RhoSync server.</td>
+	<td>The name of the source on the RhoConnect server.</td>
 </tr>
 <tr>
 	<td><code>objects</code></td>
@@ -293,7 +293,7 @@ Updates the SyncEngine poll interval.
 
 ## set_syncserver
 
-Sets the RhoSync server address and stores it in rhoconfig.txt.
+Sets the RhoConnect server address and stores it in rhoconfig.txt.
 
 	:::ruby
 	SyncEngine.set_syncserver(server_url)
@@ -301,7 +301,7 @@ Sets the RhoSync server address and stores it in rhoconfig.txt.
 <table border="1">
 <tr>
 	<td><code>server_url</code></td>
-	<td>The url for the RhoSync server.</td>
+	<td>The url for the RhoConnect server.</td>
 </tr>
 </table>
 
@@ -358,7 +358,7 @@ Enable or disable the show status popup.
 
 ## set_ssl_verify_peer
 
-Enable or disable verification of RhoSync ssl certificates.
+Enable or disable verification of RhoConnect ssl certificates.
 
 	:::ruby
 	SyncEngine.set_ssl_verify_peer(true_or_false)
@@ -366,7 +366,7 @@ Enable or disable verification of RhoSync ssl certificates.
 <table border="1">
 <tr>
 	<td><code>true_or_false</code></td>
-	<td>true to enable verification of RhoSync ssl certificates. Default is true.</td>
+	<td>true to enable verification of RhoConnect ssl certificates. Default is true.</td>
 </tr>
 </table>
 
@@ -379,7 +379,7 @@ Returns the current username of the SyncEngine session if logged_in is true; if 
 
 ## search
 
-Call search on the RhoSync application.
+Call search on the RhoConnect application.
 
 	:::ruby
 	SyncEngine.search(:source_names, :from, :search_params, :offset, max_results, :callback, :callback_param, :progress_step)
@@ -387,11 +387,11 @@ Call search on the RhoSync application.
 <table border="1">
 <tr>
 	<td><code>:source_names</code></td>
-	<td>(optional) list of source names for when you wish to search the RhoSync server over multiple sources.</td>
+	<td>(optional) list of source names for when you wish to search the RhoConnect server over multiple sources.</td>
 </tr>
 <tr>
 	<td><code>:from</code></td>
-	<td>(optional) Sets the RhoSync path that records will be fetched with. Default is 'search'.</td>
+	<td>(optional) Sets the RhoConnect path that records will be fetched with. Default is 'search'.</td>
 </tr>
 <tr>
 	<td><code>:search_params</code></td>

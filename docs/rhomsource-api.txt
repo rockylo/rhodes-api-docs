@@ -19,7 +19,7 @@ Returns a RhomSource object.
 <table border="1">
 <tr>
 	<td><code>source_name</code></td>
-	<td>The name of the source on the RhoSync server.</td>
+	<td>The name of the source on the RhoConnect server.</td>
 </tr>
 </table>
 
