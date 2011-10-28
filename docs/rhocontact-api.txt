@@ -30,6 +30,37 @@ The argument list can consist of the following arguments.
 </tr>
 </table>
 
+For Android, you can have the following arguments.
+
+<table border="1">
+<tr>
+	<td><code>:first</code></td>
+	<td>return the first contact in the list.</td>	
+</tr>
+<tr>
+	<td><code>:count</code></td>
+	<td>return the total number of contacts in the list.</td>	
+</tr>
+</table>
+
+When you use the `:all`, `:first`, or `:count` arguments, you can also use the following optional arguments.
+
+<table border="1">
+<tr>
+	<td><code>:per_page</code></td>
+	<td>return the first contact in the list.</td>	
+</tr>
+<tr>
+	<td><code>:offset</code></td>
+	<td>return the total number of contacts in the list.</td>	
+</tr>
+<tr>
+	<td><code>:select</code></td>
+	<td>array of string attributes to return with the object. Useful if your contacts have many attributes and your query only needs a few of them. Sample call: <code>companylastnamelist = Phonebook.find(:all, :select => ['last_name','company_name'])</code>
+	</td>	
+</tr>
+</table>
+
 ## create!
 
 Create a new contact in the phonebook, setting its properties passed as a parameter hash.
@@ -104,6 +135,21 @@ The contact properties are stored in a hash.
 <tr>
 	<td><code>company_name</code></td>
 	<td>String. The company name for this contact.</td>
+</tr>
+</table>
+
+### Additional Contact Properties for Android Nexus
+
+Android uses these contact properties (stored in a hash).
+
+<table border="1">
+<tr>
+	<td><code>display_name</code></td>
+	<td>String. The display name for this contact.</td>
+</tr>
+<tr>
+	<td><code>home_number</code></td>
+	<td>String. The home phone number for this contact.</td>
 </tr>
 </table>
 
@@ -186,7 +232,7 @@ The contact properties are stored in a hash.
 	<td><code>main_number</code></br>
 		<code>pager_number</code></br>
 		<code>home_fax</code></br>
-		<code>wor_fax</code></br>
+		<code>work_fax</code></br>
 	</td>
 	<td>Strings. Additonal phone numbers for iPhone.</td>
 </tr>
