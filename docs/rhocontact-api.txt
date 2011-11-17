@@ -22,7 +22,7 @@ The argument list can consist of the following arguments.
 <table border="1">
 <tr>
 	<td><code>:all</code></td>
-	<td>Return a hash of hashes of all the contacts.</td>	
+	<td>Return a hash of hashes of all the contacts in the phonebook.</td>	
 </tr>
 <tr>
 	<td><code>id</code></td>
@@ -43,23 +43,33 @@ For Android, you can have the following arguments.
 </tr>
 </table>
 
-When you use the `:all`, `:first`, or `:count` arguments, you can also use the following optional arguments.
+When you use the `:all`, `:first`, or `:count` arguments with Android or iOS, you can also use the following optional arguments to paginate the contact list. If used with :count, the exact number of returned contacts can be determined (for example for last page).
 
 <table border="1">
 <tr>
 	<td><code>:per_page</code></td>
-	<td>return the first contact in the list.</td>	
+	<td>maximum number of contacts to return.</td>	
 </tr>
 <tr>
 	<td><code>:offset</code></td>
-	<td>return the total number of contacts in the list.</td>	
+	<td>offset from the beginning of the list.</td>
 </tr>
 <tr>
 	<td><code>:select</code></td>
-	<td>array of string attributes to return with the object. Useful if your contacts have many attributes and your query only needs a few of them. Sample call: <code>companylastnamelist = Phonebook.find(:all, :select => ['last_name','company_name'])</code>
+	<td>Android only. array of string attributes to return with the object. Useful if your contacts have many attributes and your query only needs a few of them. Sample call: <code>companylastnamelist = Phonebook.find(:all, :select => ['last_name','company_name'])</code>
+	</td>	
+</tr>
+<tr>
+	<td><code>:conditions</code></td>
+	<td>Android only. A hash of conditions. </code>
 	</td>	
 </tr>
 </table>
+
+The :conditions argument will select all contacts that have at least one phone number. The condions supported are not_nil and is_nil.
+
+	:::ruby
+	@count = Rho::RhoContact.find(:count, :conditions => {:phone => 'not_nil'})
 
 ## create!
 
