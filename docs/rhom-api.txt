@@ -2,6 +2,13 @@
 
 Allows access to the Rhodes mini database object mapper, performing database operation on Rhodes model objects.
 
+## client_id
+
+Returns the current sync client id.
+
+	:::ruby
+	modelname.client_id
+
 ## clear_notification
 
 Clear notification for the object.

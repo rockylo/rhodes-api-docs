@@ -55,6 +55,10 @@ When you use the `:all`, `:first`, or `:count` arguments with Android or iOS, yo
 	<td>offset from the beginning of the list.</td>
 </tr>
 <tr>
+	<td><code>:max_results</code></td>
+	<td>used with :count. maximum number of contacts to be returned.</td>
+</tr>
+<tr>
 	<td><code>:select</code></td>
 	<td>Android only. array of string attributes to return with the object. Useful if your contacts have many attributes and your query only needs a few of them. Sample call: <code>companylastnamelist = Phonebook.find(:all, :select => ['last_name','company_name'])</code>
 	</td>	
@@ -66,7 +70,7 @@ When you use the `:all`, `:first`, or `:count` arguments with Android or iOS, yo
 </tr>
 </table>
 
-The :conditions argument will select all contacts that have at least one phone number. The condions supported are not_nil and is_nil.
+The :conditions argument will select all contacts that have at least one phone number. The conditions supported are not_nil and is_nil.
 
 	:::ruby
 	@count = Rho::RhoContact.find(:count, :conditions => {:phone => 'not_nil'})
