@@ -283,3 +283,25 @@ Reset only local (non-sync-enabled) models.
 
 	:::ruby
 	Rhom::Rhom.database_local_reset
+
+## metadata
+
+Returns the [metadata definition](http://docs.rhomobile.com/rhoconnect/metadata#metadata-definition) for a given model as a hash.
+
+	:::ruby
+	Product.metadata
+	#=> {'foo' => 'bar'}
+	
+## metadata=(metadata_def)
+
+Assigns the JSON [metadata definition](http://docs.rhomobile.com/rhoconnect/metadata#metadata-definition) for a given model.
+
+	:::ruby
+	Product.metadata = { 'foo' => 'bar' }.to_json
+
+<table border="1">
+<tr>
+	<td><code>metadata_def</code></td>
+	<td>JSON string of the metadata definition</td>
+</tr>
+</table>
