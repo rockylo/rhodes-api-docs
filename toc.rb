@@ -35,6 +35,7 @@ section 'getting-started', "Rhodes API Reference" do
   topic 'rhoapplication-api',             'RhoApplication'
   topic 'rhoconfig-api',             'RhoConfig'
   topic 'rhocontact-api',             'RhoContact'
+  topic 'rhocontroller-api',             'RhoController'
   topic 'rhoerror-api',             'RhoError'
   topic 'rhoevent-api',             'RhoEvent'
   topic 'rholog-api',             'RhoLog'

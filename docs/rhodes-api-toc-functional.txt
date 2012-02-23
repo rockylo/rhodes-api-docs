@@ -96,6 +96,8 @@ This page lists the Rhodes APIs by function.
 
 [RhoLog Class: Print messages in the log file rholog.txt](rholog-api).
 
+[RhoController Class: Within a Rhodes controller, print messages in the log file rholog.txt](rhocontroller-api).
+
 ## Syncing APIs
 
 [RhomSource API: Exposes sync information](rhomsource-api).

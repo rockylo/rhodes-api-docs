@@ -4,7 +4,7 @@ Print messages in the log file rholog.txt.
 
 ## info
 
-Print an information message and timestamp in the rholog.txt file.
+Print an information message in the rholog.txt file.
 
 	:::ruby
 	info(category, message)
@@ -22,7 +22,7 @@ Print an information message and timestamp in the rholog.txt file.
 
 ## error
 
-Print an error message and timestamp  in the rholog.txt file.
+Print an error message in the rholog.txt file. The message will have an "ERROR" prefix.
 
 	:::ruby
 	error(category, message)
