@@ -37,6 +37,8 @@ Returns true if the location system is up and running, false otherwise.
 
 Set callback to track location changes.
 
+**NOTE: You should call GeoLocation.set_notification only once. The current behavior of the callback is that it will be called forever until it is stopped; you need to call `GeoLocation.turnoff` to stop it. The previous behavior was that the callback was called once and needed to be reset.**
+
 	:::ruby
 	GeoLocation.set_notification(callback, callback_params, ping_gpssystem_timeout)
 
@@ -55,12 +57,10 @@ Set callback to track location changes.
 </tr>
 </table>
 
-Callback parameters:
-
 <table border="1">
 <tr>
 	<td><code>known_position</code></td>
-	<td>Return from known_position? method.</td>
+	<td>1 or 0. Return from known_position? method.</td>
 </tr>
 <tr>
 	<td><code>latitude</code></td>
@@ -76,11 +76,15 @@ Callback parameters:
 </tr>
 <tr>
 	<td><code>status</code></td>
-	<td>"OK" or "ERROR"</td>
+	<td>"ok" or "error"</td>
 </tr>
 <tr>
 	<td><code>error_code</code></td>
 	<td>error code from RhoError.</td>
+</tr>
+<tr>
+	<td><code>accuracy</code></td>
+	<td>horizontal radius in meters; iOS and Android.</td>
 </tr>
 </table>
 
@@ -111,3 +115,10 @@ Get the distance between two points in miles.
 	<td>Longitude of the second point in degrees.</td>
 </tr>
 </table>
+
+## turnoff
+
+Turn off GeoLocation.
+
+	:::ruby
+	GeoLocation.turnoff
