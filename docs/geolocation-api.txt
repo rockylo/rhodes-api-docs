@@ -57,6 +57,8 @@ Set callback to track location changes.
 </tr>
 </table>
 
+Parameters for the callback method.
+
 <table border="1">
 <tr>
 	<td><code>known_position</code></td>
