@@ -37,27 +37,27 @@ Returns true if the location system is up and running, false otherwise.
 
 Set callback to track location changes.
 
-**NOTE: You should call GeoLocation.set_notification only once. The current behavior of the callback is that it will be called forever until it is stopped; you need to call `GeoLocation.turnoff` to stop it. The previous behavior was that the callback was called once and needed to be reset.**
+**NOTE: You only need to call GeoLocation.set_notification once. The current behavior of the callback is that it will be called forever until it is stopped; you need to call `GeoLocation.turnoff` to stop it. The previous behavior was that the callback was called once and needed to be reset.**
 
 	:::ruby
-	GeoLocation.set_notification(callback, callback_params, ping_gpssystem_timeout)
+	GeoLocation.set_notification(callback, callback_params, ping_gpssystem_interval)
 
 <table border="1">
 <tr>
 	<td><code>callback_url</code></td>
-	<td>url for the callback method called upon a location change notification.</td>
+	<td>url for the callback method called upon a location change notification or for the interval set by ping_gpssystem_interval.</td>
 </tr>
 <tr>
 	<td><code>callback_params</code></td>
-	<td>Parameters for the callback method.</td>
+	<td>a string added to the body of the callback url. You can use it to identity who is setting up the callback, such as "my_tag=55". In general you do not set callback_param (leave it blank as in "").</td>
 </tr>
 <tr>
-	<td><code>ping_gpssystem_timeout</code></td>
-	<td>(optional) Redefine the timeout in seconds for the gps system reading. If 0, system timeout used.</td>
+	<td><code>ping_gpssystem_interval</code></td>
+	<td>(optional) If 0, the system interval is used; the callback is executed when the GPS system processes a location update (dependent on the mobile platform). If set to a number (such as 3), the callback is executed at an interval of this number of seconds (such as every three seconds).</td>
 </tr>
 </table>
 
-Parameters for the callback method.
+When the GeoLocation.set_notification callback is called, it will receive a variable called @params, just like a normal Rhodes controller action. Here are the parameters included in the @params variable.
 
 <table border="1">
 <tr>
